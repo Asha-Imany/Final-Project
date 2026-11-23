@@ -1,0 +1,339 @@
+:root {
+  --bg: #0a1226;
+  --panel: #121d38;
+  --teks: #eef2fb;
+  --redup: #a3b0cc;
+  --biru: #2c52a0;
+  --terang: #9db8ff;
+  --garis: #22305a;
+  --putih: #fff;
+  --putih-redup: rgba(255, 255, 255, 0.85);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--teks);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+section {
+  scroll-margin-top: 4.38rem;
+}
+
+:focus-visible {
+  outline: 0.19rem solid var(--terang);
+  outline-offset: 0.13rem;
+}
+
+.nav {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.13rem 5vw;
+  transition: background 0.3s;
+}
+
+.nav.solid {
+  background: rgba(10, 18, 38, 0.92);
+}
+
+.nav-tengah {
+  display: flex;
+  gap: 2.25rem;
+  font-size: 0.75rem;
+  color: var(--putih-redup);
+}
+
+.nav-tengah a:hover {
+  color: var(--putih);
+}
+
+.nav-kanan {
+  display: flex;
+  align-items: center;
+  gap: 0.88rem;
+  font-size: 0.75rem;
+}
+
+.ikon-cari {
+  display: grid;
+  place-items: center;
+  width: 1.63rem;
+  height: 1.63rem;
+  border: 0;
+  border-radius: 50%;
+  background: var(--putih);
+  cursor: pointer;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 100svh;
+  padding-inline: 9vw 5vw;
+  overflow: hidden;
+  background: #10203f;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.9s;
+}
+
+.hero-bg.tampil {
+  opacity: 1;
+}
+
+.hero-gelap {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(8, 14, 40, 0.55), rgba(8, 14, 40, 0.1) 60%, rgba(8, 14, 40, 0.35)),
+    linear-gradient(180deg, rgba(8, 14, 40, 0.5), transparent 30%, rgba(8, 14, 40, 0.55));
+}
+
+.rail,
+.hero-teks,
+.kartu-wrap,
+.titik {
+  z-index: 2;
+}
+
+.hero-teks {
+  position: relative;
+  max-width: 46%;
+  margin-top: 9vh;
+}
+
+.hero-teks.ganti {
+  animation: naik 0.6s ease-out;
+}
+
+@keyframes naik {
+  from {
+    opacity: 0;
+    transform: translateY(1.13rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.hero h1 {
+  position: relative;
+  font-size: clamp(2.4rem, 5.6vw, 5rem);
+  font-weight: 700;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.hero h1::before {
+  content: attr(data-nama);
+  position: absolute;
+  top: -0.5em;
+  left: 0;
+  height: 0.5em;
+  overflow: hidden;
+  color: transparent;
+  -webkit-text-stroke: 0.06rem rgba(255, 255, 255, 0.35);
+}
+
+.hero-deskripsi {
+  max-width: 46ch;
+  margin: 1rem 0 1.63rem;
+  font-size: 0.85rem;
+  color: var(--putih-redup);
+}
+
+.btn-explore {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.38rem;
+  padding: 0.75rem 1.13rem 0.75rem 1.63rem;
+  border-radius: 0.5rem;
+  background: var(--biru);
+  color: var(--putih);
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 0.63rem 1.75rem rgba(20, 40, 110, 0.55);
+}
+
+.btn-explore:hover {
+  filter: brightness(1.15);
+}
+
+.rail {
+  position: absolute;
+  left: 4vw;
+  top: 18%;
+  bottom: 14%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+}
+
+.rail::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto;
+  left: 50%;
+  border-left: 0.06rem dashed rgba(255, 255, 255, 0.5);
+}
+
+.rail li {
+  position: relative;
+}
+
+.rail-titik {
+  display: grid;
+  place-items: center;
+  width: 0.56rem;
+  height: 0.56rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--putih);
+  color: var(--putih);
+  font: 600 0.65rem "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.rail-titik.aktif {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.06rem solid var(--putih);
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(0.25rem);
+}
+
+.kartu-wrap {
+  position: absolute;
+  left: 52%;
+  right: 0;
+  top: 22%;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.88rem;
+}
+
+.kartu-slide {
+  position: relative;
+  flex: 0 0 clamp(8.13rem, 14vw, 13.13rem);
+}
+
+.kartu-slide + .kartu-slide {
+  margin-top: 3vw;
+}
+
+.ks-nama {
+  font-size: 0.68rem;
+  line-height: 1.3;
+  color: var(--putih);
+}
+
+.ks-bintang {
+  margin: 0.13rem 0 0.5rem;
+  font-size: 0.6rem;
+  letter-spacing: 0.13rem;
+  color: var(--putih);
+}
+
+.ks-foto {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  padding: 0;
+  border: 0;
+  border-radius: 0.88rem;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0.88rem 1.88rem rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: transform 0.25s;
+}
+
+.kartu-slide:first-child .ks-foto {
+  aspect-ratio: 2 / 3;
+}
+
+.ks-foto:hover {
+  transform: translateY(-0.25rem);
+}
+
+.ks-simpan {
+  position: absolute;
+  top: 3.38rem;
+  right: 0.63rem;
+  display: grid;
+  place-items: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: #1b2a4a;
+  cursor: pointer;
+}
+
+.ks-simpan svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+}
+
+.ks-simpan.on svg {
+  fill: #e0393e;
+  stroke: #e0393e;
+}
+
+.titik {
+  position: absolute;
+  bottom: 1.13rem;
+  left: 50%;
+  display: flex;
+  gap: 0.5rem;
+  transform: translateX(-50%);
+}
+
+.titik button {
+  width: 0.5rem;
+  height: 0.5rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+.titik button.aktif {
+  width: 1.38rem;
+  border-radius: 0.38rem;
+  background: var(--putih);
+}

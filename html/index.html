@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NUSATERRA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="nav" id="nav">
+        <a class="logo" href="#beranda">
+            <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+                <path d="M3 18c4-1 6-4 7-9 2 3 5 3 11 2-2 5-6 8-11 8-3 0-5-.5-7-1z" fill="#f59e0b" />
+            </svg>
+            NUSATERRA
+        </a>
+        <nav class="nav-tengah">
+            <a href="#beranda">Beranda</a>
+            <a href="#katalog">Destinasi</a>
+            <a href="#pesan">Pesan</a>
+            <a href="#tentang">Tentang</a>
+        </nav>
+        <div class="nav-kanan">
+            <button id="btn-cari" class="ikon-cari" aria-label="Cari destinasi">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#1b2a4a" stroke-width="2.5"
+                    stroke-linecap="round">
+                    <circle cx="11" cy="11" r="7" />
+                    <path d="M20 20l-4-4" />
+                </svg>
+            </button>
+            <span>Halo, Pengunjung!</span>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="beranda" class="hero">
+            <div class="hero-bg" id="bg-a"></div>
+            <div class="hero-bg" id="bg-b"></div>
+            <div class="hero-gelap"></div>
+
+
+            <ol class="rail" id="rail" aria-label="Pilih destinasi"></ol>
+
+
+            <div class="hero-teks" id="hero-teks">
+                <h1 id="hero-nama"></h1>
+                <p id="hero-deskripsi" class="hero-deskripsi"></p>
+                <a href="#katalog" class="btn-explore">Jelajahi <span class="panah">&rarr;</span></a>
+            </div>
+
+
+            <div class="kartu-wrap" id="hero-kartu"></div>
+            <div class="titik" id="titik"></div>
+        </section>
+
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
