@@ -1,0 +1,42 @@
+.destination {
+    background: #F2F6FC;
+    min-height: 100vh;
+    padding: 60px;
+}
+
+.sec-destination {
+    background: #DCEAF0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 0 48px 48px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;  
+  gap: 12px;
+  margin: 24px 0 32px;
+}
+
+.button-color {
+padding: 10px 28px;
+  border: none;
+  border-radius: 999px;      
+  background: #FFFFFF;
+  color: #0F2A7A;          
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.button button:hover {
+  background: #DCE6F5;
+}
+
+.button button-color {
+  background: #0F2A7A;      
+  color: #FFFFFF;
+}
