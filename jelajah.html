@@ -1,410 +1,402 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jelajah-Nusantara</title>
-   <link rel="stylesheet" href="css/style.css">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jelajah Nusantara</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container">
-    <!-- Header -->
-    <header class="header">
-      <h1>Jelajah Nusantara</h1>
-      <a href="#">Lihat semua rute →</a>
-    </header>
+<div class="container">
 
-    <!-- inputt -->
-    <input type="radio" name="tab" id="tab-semua" class="tab-radio" checked />
-    <input type="radio" name="tab" id="tab-bahari" class="tab-radio" />
-    <input type="radio" name="tab" id="tab-gunung" class="tab-radio" />
-    <input type="radio" name="tab" id="tab-budaya" class="tab-radio" />
-    <input type="radio" name="tab" id="tab-kuliner" class="tab-radio" />
-
-    <!-- Tabs labels -->
-    <div class="tabs">
-      <label for="tab-semua">Semua rute</label>
-      <label for="tab-bahari">Bahari &amp; Pulau</label>
-      <label for="tab-gunung">Gunung &amp; Alam</label>
-      <label for="tab-budaya">Budaya &amp; Sejarah</label>
-      <label for="tab-kuliner">Kuliner lokal</label>
-    </div>
-
-    <!-- Grid: Semua rute -->
-    <div class="cards-grid grid-semua">
-      <!-- card 1 -->
-      <article class="card">
-        <img class="card-img" src="img/wayag.webp" alt="Ekspedisi Gugusan Pulau Wayag" />
-        <div class="card-overlay"></div>
-        <div class="card-badges">
-          <span class="badge badge-cat">Bahari &amp; Pulau</span>
-          <span class="badge badge-dur">4H 3M</span>
-        </div>
-        <div class="card-content">
-          <p class="card-loc">Papua Barat Daya</p>
-          <h2 class="card-title">Ekspedisi Gugusan Pulau Wayag</h2>
-          <div class="card-divider"></div>
-          <div class="card-footer">
-            <div>
-              <p class="card-price-label">Mulai dari</p>
-              <p class="card-price">Rp 6.850.000</p>
-            </div>
-            <button class="card-btn" type="button" aria-label="Lihat detail">
-              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </button>
-          </div>
-        </div>
-      </article>
-
-      <!-- card 2 -->
-      <article class="card">
-        <img class="card-img" src="img/ijen.jpg" alt="Jejak Matahari Terbit Tengger & Ijen" />
-        <div class="card-overlay"></div>
-        <div class="card-badges">
-          <span class="badge badge-cat">Gunung &amp; Alam</span>
-          <span class="badge badge-dur">3H 2M</span>
-        </div>
-        <div class="card-content">
-          <p class="card-loc">Jawa Timur</p>
-          <h2 class="card-title">Jejak Matahari Terbit Tengger &amp; Ijen</h2>
-          <div class="card-divider"></div>
-          <div class="card-footer">
-            <div>
-              <p class="card-price-label">Mulai dari</p>
-              <p class="card-price">Rp 3.850.000</p>
-            </div>
-            <button class="card-btn" type="button" aria-label="Lihat detail">
-              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </button>
-          </div>
-        </div>
-      </article>
-
-      <!-- card 3 -->
-      <article class="card">
-        <img class="card-img" src="img/gadang.jpg" alt="Warisan Ranah Minang & Ngarai Sianok" />
-        <div class="card-overlay"></div>
-        <div class="card-badges">
-          <span class="badge badge-cat">Budaya &amp; Sejarah</span>
-          <span class="badge badge-dur">3H 2M</span>
-        </div>
-        <div class="card-content">
-          <p class="card-loc">Sumatera Barat</p>
-          <h2 class="card-title">Warisan ranah minang &amp; Ngarai Sianok</h2>
-          <div class="card-divider"></div>
-          <div class="card-footer">
-            <div>
-              <p class="card-price-label">Mulai dari</p>
-              <p class="card-price">Rp 3.450.000</p>
-            </div>
-            <button class="card-btn" type="button" aria-label="Lihat detail">
-              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </button>
-          </div>
-        </div>
-      </article>
-    </div>
-
-    <!-- Grid: Bahari & Pulau -->
-    <div class="cards-grid grid-bahari">
-      <!-- card 4 -->
-      <article class="card">
-        <img class="card-img" src="img/wakatobi.jpg" alt="Surga Terumbu Karang Taman Laut Wakatobi" />
-        <div class="card-overlay"></div>
-        <div class="card-badges">
-          <span class="badge badge-cat">Bahari &amp; Pulau</span>
-          <span class="badge badge-dur">4H 3M</span>
-        </div>
-        <div class="card-content">
-          <p class="card-loc">Sulawesi Tenggara</p>
-          <h2 class="card-title">Surga Terumbu Karang Taman Laut Wakatobi</h2>
-          <div class="card-divider"></div>
-          <div class="card-footer">
-            <div>
-              <p class="card-price-label">Mulai dari</p>
-              <p class="card-price">Rp 5.200.000</p>
-            </div>
-            <button class="card-btn" type="button" aria-label="Lihat detail">
-              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </button>
-          </div>
-        </div>
-      </article>
-
-      <!-- card 5 -->
-      <article class="card">
-        <img class="card-img" src="img/karimunjawa.jpg" alt="Pesona Pasir Putih Kepulauan Karimunjawa" />
-        <div class="card-overlay"></div>
-        <div class="card-badges">
-          <span class="badge badge-cat">Bahari &amp; Pulau</span>
-          <span class="badge badge-dur">3H 2M</span>
-        </div>
-        <div class="card-content">
-          <p class="card-loc">Jawa Tengah</p>
-          <h2 class="card-title">Pesona Pasir Putih Kepulauan Karimunjawa</h2>
-          <div class="card-divider"></div>
-          <div class="card-footer">
-            <div>
-              <p class="card-price-label">Mulai dari</p>
-              <p class="card-price">Rp 2.750.000</p>
-            </div>
-            <button class="card-btn" type="button" aria-label="Lihat detail">
-              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </button>
-          </div>
-        </div>
-      </article>
-
-      <!-- card 6 -->
-      <article class="card">
-        <img class="card-img" src="img/nusa-penida.webp" alt="Pesona Tebing Karang & Laut Biru Nusa Penida" />
-        <div class="card-overlay"></div>
-        <div class="card-badges">
-          <span class="badge badge-cat">Bahari &amp; Pulau</span>
-          <span class="badge badge-dur">3H 2M</span>
-        </div>
-        <div class="card-content">
-          <p class="card-loc">Nusa Tenggara Barat / Bali</p>
-          <h2 class="card-title">Pesona Tebing Karang &amp; Laut Biru Nusa Penida</h2>
-          <div class="card-divider"></div>
-          <div class="card-footer">
-            <div>
-              <p class="card-price-label">Mulai dari</p>
-              <p class="card-price">Rp 2.950.000</p>
-            </div>
-            <button class="card-btn" type="button" aria-label="Lihat detail">
-              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </button>
-          </div>
-        </div>
-      </article>
-    </div>
-
-    <!-- Grid: Gunung & Alam -->
-    <div class="cards-grid grid-gunung">
-      <!-- card 7 -->
-      <article class="card">
-        <img class="card-img" src="img/rinjani.jpg" alt="Menembus Awan di Puncak Rinjani" />
-        <div class="card-overlay"></div>
-        <div class="card-badges">
-          <span class="badge badge-cat">Gunung &amp; Alam</span>
-          <span class="badge badge-dur">3H 2M</span>
-        </div>
-        <div class="card-content">
-          <p class="card-loc">Nusa Tenggara Barat</p>
-          <h2 class="card-title">Menembus Awan di Puncak Rinjani</h2>
-          <div class="card-divider"></div>
-          <div class="card-footer">
-            <div>
-              <p class="card-price-label">Mulai dari</p>
-              <p class="card-price">Rp 3.950.000</p>
-            </div>
-            <button class="card-btn" type="button" aria-label="Lihat detail">
-              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </button>
-          </div>
-        </div>
-      </article>
-
-      <!-- CARD 8 -->
-      <article class="card">
-        <img class="card-img" src="img/dieng.jpg" alt="Negeri di Atas Awan Dataran Tinggi Dieng" />
-        <div class="card-overlay"></div>
-        <div class="card-badges">
-          <span class="badge badge-cat">Gunung &amp; Alam</span>
-          <span class="badge badge-dur">2H 1M</span>
-        </div>
-        <div class="card-content">
-          <p class="card-loc">Jawa Tengah</p>
-          <h2 class="card-title">Negeri di Atas Awan Dataran Tinggi Dieng</h2>
-          <div class="card-divider"></div>
-          <div class="card-footer">
-            <div>
-              <p class="card-price-label">Mulai dari</p>
-              <p class="card-price">Rp 1.850.000</p>
-            </div>
-            <button class="card-btn" type="button" aria-label="Lihat detail">
-              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </button>
-          </div>
-        </div>
-      </article>
-
-      <!-- card 9 -->
-      <article class="card">
-        <img class="card-img" src="img/gunung-tujuh.webp" alt="Pesona Atap Sumatera & Danau Gunung Tujuh" />
-        <div class="card-overlay"></div>
-        <div class="card-badges">
-          <span class="badge badge-cat">Gunung &amp; Alam</span>
-          <span class="badge badge-dur">4H 3M</span>
-        </div>
-        <div class="card-content">
-          <p class="card-loc">Jambi</p>
-          <h2 class="card-title">Pesona Atap Sumatera &amp; Danau Gunung Tujuh</h2>
-          <div class="card-divider"></div>
-          <div class="card-footer">
-            <div>
-              <p class="card-price-label">Mulai dari</p>
-              <p class="card-price">Rp 3.300.000</p>
-            </div>
-            <button class="card-btn" type="button" aria-label="Lihat detail">
-              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </button>
-          </div>
-        </div>
-      </article>
-    </div>
-
-    <!-- Grid: Budaya & Sejarah -->
-    <div class="cards-grid grid-budaya">
-      <!-- card 10 -->
-      <article class="card">
-        <img class="card-img" src="https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=800&q=80" alt="Kejayaan Kesultanan Deli & Istana Maimun" />
-        <div class="card-overlay"></div>
-        <div class="card-badges">
-          <span class="badge badge-cat">Budaya &amp; Sejarah</span>
-          <span class="badge badge-dur">3H 2M</span>
-        </div>
-        <div class="card-content">
-          <p class="card-loc">Sumatera Utara</p>
-          <h2 class="card-title">Kejayaan Kesultanan Deli &amp; Istana Maimun</h2>
-          <div class="card-divider"></div>
-          <div class="card-footer">
-            <div>
-              <p class="card-price-label">Mulai dari</p>
-              <p class="card-price">Rp 2.900.000</p>
-            </div>
-            <button class="card-btn" type="button" aria-label="Lihat detail">
-              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </button>
-          </div>
-        </div>
-      </article>
-
-      <!-- 11 -->
-      <article class="card">
-        <img class="card-img" src="img/serambi-mekkah.jpg" alt="Jejak Sejarah Kesultanan Serambi Mekkah" />
-        <div class="card-overlay"></div>
-        <div class="card-badges">
-          <span class="badge badge-cat">Budaya &amp; Sejarah</span>
-          <span class="badge badge-dur">3H 2M</span>
-        </div>
-        <div class="card-content">
-          <p class="card-loc">Banda Aceh</p>
-          <h2 class="card-title">Jejak Sejarah Kesultanan Serambi Mekkah</h2>
-          <div class="card-divider"></div>
-          <div class="card-footer">
-            <div>
-              <p class="card-price-label">Mulai dari</p>
-              <p class="card-price">Rp 3.150.000</p>
-            </div>
-            <button class="card-btn" type="button" aria-label="Lihat detail">
-              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </button>
-          </div>
-        </div>
-      </article>
-
-      <!-- card 12 -->
-      <article class="card">
-        <img class="card-img" src="img/bali.avif" alt="Harmoni Tradisi Ubud & Tabanan Selatan" />
-        <div class="card-overlay"></div>
-        <div class="card-badges">
-          <span class="badge badge-cat">Budaya &amp; Sejarah</span>
-          <span class="badge badge-dur">3H 2M</span>
-        </div>
-        <div class="card-content">
-          <p class="card-loc">Bali</p>
-          <h2 class="card-title">Harmoni Tradisi Ubud &amp; Tabanan Selatan</h2>
-          <div class="card-divider"></div>
-          <div class="card-footer">
-            <div>
-              <p class="card-price-label">Mulai dari</p>
-              <p class="card-price">Rp 3.800.000</p>
-            </div>
-            <button class="card-btn" type="button" aria-label="Lihat detail">
-              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </button>
-          </div>
-        </div>
-      </article>
-    </div>
-
-    <!-- Grid: Kuliner lokal -->
-    <div class="cards-grid grid-kuliner">
-      <!-- card 13 -->
-      <article class="card">
-        <img class="card-img" src="img/kopi.avif" alt="Wisata Rasa Klasik & Kopi Priangan" />
-        <div class="card-overlay"></div>
-        <div class="card-badges">
-          <span class="badge badge-cat">Kuliner lokal</span>
-          <span class="badge badge-dur">2H 1M</span>
-        </div>
-        <div class="card-content">
-          <p class="card-loc">Jawa Barat</p>
-          <h2 class="card-title">Wisata Rasa Klasik &amp; Kopi Priangan</h2>
-          <div class="card-divider"></div>
-          <div class="card-footer">
-            <div>
-              <p class="card-price-label">Mulai dari</p>
-              <p class="card-price">Rp 1.650.000</p>
-            </div>
-            <button class="card-btn" type="button" aria-label="Lihat detail">
-              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </button>
-          </div>
-        </div>
-      </article>
-
-      <!-- card 14 -->
-      <article class="card">
-        <img class="card-img" src="img/coto-mksr.jpg" alt="Cita Rasa Rempah Coto & Pallubasa Losari" />
-        <div class="card-overlay"></div>
-        <div class="card-badges">
-          <span class="badge badge-cat">Kuliner lokal</span>
-          <span class="badge badge-dur">3H 2M</span>
-        </div>
-        <div class="card-content">
-          <p class="card-loc">Sulawesi Selatan</p>
-          <h2 class="card-title">Cita Rasa Rempah Coto &amp; Pallubasa Losari</h2>
-          <div class="card-divider"></div>
-          <div class="card-footer">
-            <div>
-              <p class="card-price-label">Mulai dari</p>
-              <p class="card-price">Rp 2.750.000</p>
-            </div>
-            <button class="card-btn" type="button" aria-label="Lihat detail">
-              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </button>
-          </div>
-        </div>
-      </article>
-
-      <!-- card 15 -->
-      <article class="card">
-        <img class="card-img" src="img/pempek.jpg" alt="Jelajah Kuliner Sungai Musi & Pempek Asli" />
-        <div class="card-overlay"></div>
-        <div class="card-badges">
-          <span class="badge badge-cat">Kuliner lokal</span>
-          <span class="badge badge-dur">3H 2M</span>
-        </div>
-        <div class="card-content">
-          <p class="card-loc">Sumatera Selatan</p>
-          <h2 class="card-title">Jelajah Kuliner Sungai Musi &amp; Pempek Asli</h2>
-          <div class="card-divider"></div>
-          <div class="card-footer">
-            <div>
-              <p class="card-price-label">Mulai dari</p>
-              <p class="card-price">Rp 2.550.000</p>
-            </div>
-            <button class="card-btn" type="button" aria-label="Lihat detail">
-              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </button>
-          </div>
-        </div>
-      </article>
-    </div>
+  <div class="header">
+    <h1 class="header-title">Jelajah Nusantara</h1>
   </div>
+
+  
+  <input type="radio" name="tab" id="tab1" checked>
+  <input type="radio" name="tab" id="tab2">
+  <input type="radio" name="tab" id="tab3">
+  <input type="radio" name="tab" id="tab4">
+  <input type="radio" name="tab" id="tab5">
+
+  <div class="tabs">
+    <label for="tab1" class="tab-label">Semua rute</label>
+    <label for="tab2" class="tab-label">Bahari &amp; Pulau</label>
+    <label for="tab3" class="tab-label">Gunung &amp; Alam</label>
+    <label for="tab4" class="tab-label">Budaya &amp; Sejarah</label>
+    <label for="tab5" class="tab-label">Kuliner lokal</label>
+  </div>
+
+  <div class="tab-content content1">
+
+    <div class="card">
+      <img src="img/wayag.webp" alt="Wayag">
+      <div class="card-overlay"></div>
+      <div class="card-top">
+        <span class="badge-cat">Bahari &amp; Pulau</span>
+        <span class="badge-dur">4H 3M</span>
+      </div>
+      <div class="card-bottom">
+        <div class="card-location">Papua Barat Daya</div>
+        <div class="card-title">Ekspedisi Gugusan Pulau Wayag</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+          <div class="card-price-wrap">
+            <span class="card-price-label">Mulai dari</span>
+            <span class="card-price">Rp 6.850.000</span>
+          </div>
+          <div class="card-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/ijen.jpg" alt="Tengger Ijen">
+      <div class="card-overlay"></div>
+      <div class="card-top">
+        <span class="badge-cat">Gunung &amp; Alam</span>
+        <span class="badge-dur">3H 2M</span>
+      </div>
+      <div class="card-bottom">
+        <div class="card-location">Jawa Timur</div>
+        <div class="card-title">Jejak Matahari Terbit Tengger &amp; Ijen</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+          <div class="card-price-wrap">
+            <span class="card-price-label">Mulai dari</span>
+            <span class="card-price">Rp 3.850.000</span>
+          </div>
+          <div class="card-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/gadang.jpg" alt="Minangkabau">
+      <div class="card-overlay"></div>
+      <div class="card-top">
+        <span class="badge-cat">Budaya &amp; Sejarah</span>
+        <span class="badge-dur">3H 2M</span>
+      </div>
+      <div class="card-bottom">
+        <div class="card-location">Sumatera Barat</div>
+        <div class="card-title">Warisan Ranah Minang &amp; Ngarai Sianok</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+          <div class="card-price-wrap">
+            <span class="card-price-label">Mulai dari</span>
+            <span class="card-price">Rp 3.450.000</span>
+          </div>
+          <div class="card-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="tab-content content2">
+
+
+    <div class="card">
+      <img src="img/wakatobi.jpg" alt="Wakatobi">
+      <div class="card-overlay"></div>
+      <div class="card-top">
+        <span class="badge-cat">Bahari &amp; Pulau</span>
+        <span class="badge-dur">4H 3M</span>
+      </div>
+      <div class="card-bottom">
+        <div class="card-location">Sulawesi Tenggara</div>
+        <div class="card-title">Surga Terumbu Karang Taman Laut Wakatobi</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+          <div class="card-price-wrap">
+            <span class="card-price-label">Mulai dari</span>
+            <span class="card-price">Rp 5.200.000</span>
+          </div>
+          <div class="card-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/karimunjawa.jpg" alt="Karimunjawa">
+      <div class="card-overlay"></div>
+      <div class="card-top">
+        <span class="badge-cat">Bahari &amp; Pulau</span>
+        <span class="badge-dur">3H 2M</span>
+      </div>
+      <div class="card-bottom">
+        <div class="card-location">Jawa Tengah</div>
+        <div class="card-title">Pesona Pasir Putih Kepulauan Karimunjawa</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+          <div class="card-price-wrap">
+            <span class="card-price-label">Mulai dari</span>
+            <span class="card-price">Rp 2.750.000</span>
+          </div>
+          <div class="card-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/nusa-penida.webp" alt="Nusa Penida">
+      <div class="card-overlay"></div>
+      <div class="card-top">
+        <span class="badge-cat">Bahari &amp; Pulau</span>
+        <span class="badge-dur">3H 2M</span>
+      </div>
+      <div class="card-bottom">
+        <div class="card-location">Bali</div>
+        <div class="card-title">Pesona Tebing Karang &amp; Laut Biru Nusa Penida</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+          <div class="card-price-wrap">
+            <span class="card-price-label">Mulai dari</span>
+            <span class="card-price">Rp 2.950.000</span>
+          </div>
+          <div class="card-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="tab-content content3">
+
+    <div class="card">
+      <img src="img/rinjani.jpg" alt="Rinjani">
+      <div class="card-overlay"></div>
+      <div class="card-top">
+        <span class="badge-cat">Gunung &amp; Alam</span>
+        <span class="badge-dur">3H 2M</span>
+      </div>
+      <div class="card-bottom">
+        <div class="card-location">Nusa Tenggara Barat</div>
+        <div class="card-title">Menembus Awan di Puncak Rinjani</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+          <div class="card-price-wrap">
+            <span class="card-price-label">Mulai dari</span>
+            <span class="card-price">Rp 3.950.000</span>
+          </div>
+          <div class="card-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/dieng.jpg" alt="Dieng">
+      <div class="card-overlay"></div>
+      <div class="card-top">
+        <span class="badge-cat">Gunung &amp; Alam</span>
+        <span class="badge-dur">2H 1M</span>
+      </div>
+      <div class="card-bottom">
+        <div class="card-location">Jawa Tengah</div>
+        <div class="card-title">Negeri di Atas Awan Dataran Tinggi Dieng</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+          <div class="card-price-wrap">
+            <span class="card-price-label">Mulai dari</span>
+            <span class="card-price">Rp 1.850.000</span>
+          </div>
+          <div class="card-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/gunung-tujuh.webp" alt="Gunung Tujuh">
+      <div class="card-overlay"></div>
+      <div class="card-top">
+        <span class="badge-cat">Gunung &amp; Alam</span>
+        <span class="badge-dur">4H 3M</span>
+      </div>
+      <div class="card-bottom">
+        <div class="card-location">Jambi</div>
+        <div class="card-title">Pesona Atap Sumatera &amp; Danau Gunung Tujuh</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+          <div class="card-price-wrap">
+            <span class="card-price-label">Mulai dari</span>
+            <span class="card-price">Rp 3.300.000</span>
+          </div>
+          <div class="card-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="tab-content content4">
+
+    <div class="card">
+      <img src="img/maimun.jpeg" alt="Istana Maimun">
+      <div class="card-overlay"></div>
+      <div class="card-top">
+        <span class="badge-cat">Budaya &amp; Sejarah</span>
+        <span class="badge-dur">3H 2M</span>
+      </div>
+      <div class="card-bottom">
+        <div class="card-location">Sumatera Utara</div>
+        <div class="card-title">Kejayaan Kesultanan Deli &amp; Istana Maimun</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+          <div class="card-price-wrap">
+            <span class="card-price-label">Mulai dari</span>
+            <span class="card-price">Rp 2.900.000</span>
+          </div>
+          <div class="card-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/serambi-mekkah.jpg" alt="Aceh">
+      <div class="card-overlay"></div>
+      <div class="card-top">
+        <span class="badge-cat">Budaya &amp; Sejarah</span>
+        <span class="badge-dur">3H 2M</span>
+      </div>
+      <div class="card-bottom">
+        <div class="card-location">Banda Aceh</div>
+        <div class="card-title">Jejak Sejarah Kesultanan Serambi Mekkah</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+          <div class="card-price-wrap">
+            <span class="card-price-label">Mulai dari</span>
+            <span class="card-price">Rp 3.150.000</span>
+          </div>
+          <div class="card-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/bali.avif" alt="Ubud">
+      <div class="card-overlay"></div>
+      <div class="card-top">
+        <span class="badge-cat">Budaya &amp; Sejarah</span>
+        <span class="badge-dur">3H 2M</span>
+      </div>
+      <div class="card-bottom">
+        <div class="card-location">Bali</div>
+        <div class="card-title">Harmoni Tradisi Ubud &amp; Tabanan Selatan</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+          <div class="card-price-wrap">
+            <span class="card-price-label">Mulai dari</span>
+            <span class="card-price">Rp 3.800.000</span>
+          </div>
+          <div class="card-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="tab-content content5">
+
+    <div class="card">
+      <img src="img/kopi.avif" alt="Kopi Priangan">
+      <div class="card-overlay"></div>
+      <div class="card-top">
+        <span class="badge-cat">Kuliner lokal</span>
+        <span class="badge-dur">2H 1M</span>
+      </div>
+      <div class="card-bottom">
+        <div class="card-location">Jawa Barat</div>
+        <div class="card-title">Wisata Rasa Klasik &amp; Kopi Priangan</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+          <div class="card-price-wrap">
+            <span class="card-price-label">Mulai dari</span>
+            <span class="card-price">Rp 1.650.000</span>
+          </div>
+          <div class="card-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/coto-mksr.jpg" alt="Coto Makassar">
+      <div class="card-overlay"></div>
+      <div class="card-top">
+        <span class="badge-cat">Kuliner lokal</span>
+        <span class="badge-dur">3H 2M</span>
+      </div>
+      <div class="card-bottom">
+        <div class="card-location">Sulawesi Selatan</div>
+        <div class="card-title">Cita Rasa Rempah Coto &amp; Pallubasa Losari</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+          <div class="card-price-wrap">
+            <span class="card-price-label">Mulai dari</span>
+            <span class="card-price">Rp 2.750.000</span>
+          </div>
+          <div class="card-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/pempek.jpg" alt="Pempek Musi">
+      <div class="card-overlay"></div>
+      <div class="card-top">
+        <span class="badge-cat">Kuliner lokal</span>
+        <span class="badge-dur">3H 2M</span>
+      </div>
+      <div class="card-bottom">
+        <div class="card-location">Sumatera Selatan</div>
+        <div class="card-title">Jelajah Kuliner Sungai Musi &amp; Pempek Asli</div>
+        <div class="card-divider"></div>
+        <div class="card-footer">
+          <div class="card-price-wrap">
+            <span class="card-price-label">Mulai dari</span>
+            <span class="card-price">Rp 2.550.000</span>
+          </div>
+          <div class="card-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
 </body>
 </html>
