@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="rating-section">
+      <div class="rating-header">
+        <h1>Rating dari pengguna</h1>
+        <p>
+          Ini adalah beberapa rating dari para pengguna, Lihat bagaimana para
+          pengguna menilai website kami dan tuliskan pengalamanmu!
+        </p>
+      </div>
+
+      <div class="rating-wrapper">
+        <div class="review-form">
+          <form id="form-rating">
+            <div class="form-group">
+              <label for="input-nama">Nama</label>
+              <input
+                type="text"
+                id="input-nama"
+                class="input-nama"
+                name="nama"
+                placeholder="Nama lengkap Anda"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="input-rating">Rating Anda</label>
+              <select id="input-rating" class="input-rating" name="rating">
+                <option value="" selected disabled>
+                  Pilih bintang untuk kami
+                </option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="input-review">Pesan dari Anda</label>
+              <textarea
+                id="input-review"
+                name="pesan"
+                placeholder="Tuliskan pesan dari Anda untuk kami / pengguna lain."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Kirim pesan ></button>
+          </form>
+        </div>
+        <div class="reviews">
+          <div class="review-list" id="daftar-review"></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="data.js"></script>
+    <script src="form.js"></script>
+  </body>
+</html>
