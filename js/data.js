@@ -36,3 +36,29 @@ const DESTINASI_AWAL = [
     warna: "#4a2c2a, #e0a458"
   }
 ];
+const dataAwalReview = [
+  {
+    id: "rev-1",
+    nama: "Guevara Tamtaka",
+    rating: 5,
+    pesan:
+      "Superrr nice website!! so easy to use and the design is really pretty",
+    waktu: Date.now() - 2 * 60 * 60 * 1000,
+  },
+  {
+    id: "rev-2",
+    nama: "Faqih Athalah",
+    rating: 5,
+    pesan:
+      "Rekomendasi tempat wisatanya akurat, tampilannya juga rapi. Jadi tahu mau ke mana saja pas liburan kemarin",
+    waktu: Date.now() - 24 * 60 * 60 * 1000,
+  },
+  {
+    id: "rev-3",
+    nama: "Marceyon",
+    rating: 4,
+    pesan:
+      "Websitenya membantu banget buat nyusun itinerary liburan! Info destinasinya lengkap dan gampang dicari",
+    waktu: Date.now() - 3 * 24 * 60 * 60 * 1000,
+  },
+];
