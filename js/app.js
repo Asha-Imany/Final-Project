@@ -1,5 +1,4 @@
 const KEY_DESTINASI = "wk_destinasi_v2";
-const KEY_FAVORIT = "wk_favorit";
 
 const $ = (id) => document.getElementById(id);
 
@@ -22,25 +21,13 @@ function esc(teks) {
   return el.innerHTML;
 }
 
-let timerToast;
-
-function toast(pesan) {
-  const el = $("toast");
-  el.textContent = pesan;
-  el.classList.add("tampil");
-  clearTimeout(timerToast);
-  timerToast = setTimeout(() => el.classList.remove("tampil"), 2500);
-}
-
 let destinasi = ambil(KEY_DESTINASI, DESTINASI_AWAL);
-let favorit = ambil(KEY_FAVORIT, []);
 let aktif = 0;
 let slot = 0;
 let timer;
 
 simpan(KEY_DESTINASI, destinasi);
 
-const ikonSimpan = '<svg viewBox="0 0 24 24" width="13" height="13"><path d="M6 3h12v18l-6-4-6 4z"/></svg>';
 const bintang = (n) => "★".repeat(n) + "☆".repeat(5 - n);
 const fotoBg = (d) => `url('${d.foto}'), linear-gradient(135deg, ${d.warna})`;
 
@@ -89,7 +76,6 @@ function tampilKartu() {
         <p class="ks-nama">${esc(d.nama)}, ${esc(d.daerah)}</p>
         <p class="ks-bintang" aria-label="Rating ${d.rating} dari 5">${bintang(d.rating)}</p>
         <button class="ks-foto" data-i="${i}" style="background-image:${fotoBg(d)}" aria-label="Tampilkan ${esc(d.nama)}"></button>
-        <button class="ks-simpan ${favorit.includes(d.id) ? "on" : ""}" data-simpan="${d.id}" aria-label="Simpan ${esc(d.nama)} ke favorit">${ikonSimpan}</button>
       </div>`;
   }).join("");
 }
@@ -107,19 +93,7 @@ function klikPenanda(e) {
   if (tombol) pindah(Number(tombol.dataset.i));
 }
 
-function klikKartu(e) {
-  const tombol = e.target.closest("[data-simpan]");
-  if (!tombol) return klikPenanda(e);
-
-  const id = Number(tombol.dataset.simpan);
-  const sudah = favorit.includes(id);
-  favorit = sudah ? favorit.filter((x) => x !== id) : [...favorit, id];
-  simpan(KEY_FAVORIT, favorit);
-  tombol.classList.toggle("on", !sudah);
-  toast(sudah ? "Dihapus dari favorit" : "Ditambahkan ke favorit");
-}
-
-$("hero-kartu").onclick = klikKartu;
+$("hero-kartu").onclick = klikPenanda;
 $("rail").onclick = klikPenanda;
 $("titik").onclick = klikPenanda;
 
