@@ -4,24 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destinasi Unggulan</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/desti.css">
 </head>
 <body>
     <main>
         <section class="destination">
             <div class="sec-destination">
                 <h1>Destinasi Unggulan</h1>
-                <p>Jelajahi keindahan pulau-pulau Nusantara</p>
-            </div>
+                <p>Jelajahi keindahan pulau-pulau Nusantara, mulai dari pantai tropis hingga panorama alam yang memukau. Temukan beragam destinasi pilihan dan pesona wisata Indonesia di setiap perjalanan. </p>
+            
+                <div class="button">
+                    <button class="button-color active" data-daerah="semua">Semua</button>
+                    <button class="button-color" data-daerah="bali">Bali</button>
+                    <button class="button-color" data-daerah="yogyakarta">Yogyakarta</button>
+                    <button class="button-color" data-daerah="ntt">NTT</button>
+                    <button class="button-color" data-daerah="lombok">Lombok</button>
+                    <button class="button-color" data-daerah="papua">Papua</button>
+                </div>
 
-            <div class="button">
-                <button class="button-color">Semua</button>
-                <button>Bali</button>
-                <button>Yogyakarta</button>
-                <button>NTT</button>
-                <button>Lombok</button>
-                <button>Papua</button>
+                <div id="cards"></div>
             </div>
         </section>
     </main>
+    <script src="js/data.js"></script>
+    <script src="js/dest.js"></script>
 </body>
 </html>

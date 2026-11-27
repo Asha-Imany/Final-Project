@@ -369,11 +369,11 @@ const PACKAGES = {
       ["cup-soda", "Air Mineral & Kue Tradisional"]
     ],
     images: [
-      "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=900&h=700&fit=crop",
-      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1517248135467-4c3edf5fe076?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=400&fit=crop"
+      "img/bandung1.jpg",
+      "img/bandung2.jpg",
+      "img/bandung3.jpg",
+      "img/bandung4.jpg",
+      "img/bandung5.jpg"
     ]
   },
   makassar: {
@@ -398,11 +398,11 @@ const PACKAGES = {
       ["cup-soda", "Air Mineral & Es Pisang Ijo"]
     ],
     images: [
-      "https://images.unsplash.com/photo-1555126634-323283e090fa?w=900&h=700&fit=crop",
-      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1546069901-ba3373145374?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1517248135467-4c3edf5fe076?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=400&fit=crop"
+      "img/coto2.jpg",
+      "img/makas2.jpg",
+      "img/makas4.jpg",
+      "img/makas5.jpg",
+      "img/makas6.jpg",
     ]
   },
   palembang: {
@@ -427,11 +427,11 @@ const PACKAGES = {
       ["cup-soda", "Air Mineral & Es Kacang Merah"]
     ],
     images: [
-      "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=900&h=700&fit=crop",
-      "https://images.unsplash.com/photo-1555126634-323283e090fa?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1546069901-ba3373145374?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1517248135467-4c3edf5fe076?w=600&h=400&fit=crop"
+      "img/musi1.jpg",
+      "img/musi3.jpg",
+      "img/musi2.jpg",
+      "img/musi4.jpg",
+      "img/musi5.jpg",
     ]
   }
 };

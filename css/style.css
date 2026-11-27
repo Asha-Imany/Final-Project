@@ -357,7 +357,7 @@ section {
 }
 
 
-//jelajah
+/* jelajah */
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -421,6 +421,14 @@ input[type="radio"] {
   background: #F4F9FD;
 }
 
+.button button-color {
+  background: #0F2A7A;      
+  color: #FFFFFF;
+}
+
+.about {
+  background-image: url("img/rajaampat.jpg");
+}
 #tab1:checked ~ .tabs label[for="tab1"],
 #tab2:checked ~ .tabs label[for="tab2"],
 #tab3:checked ~ .tabs label[for="tab3"],
@@ -602,6 +610,18 @@ input[type="radio"] {
   width: 15px;
   height: 15px;
   color: var(--primary-blue);
+}
+
+
+/* review */
+.rating-section {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--bg-section);
+  border-radius: 1rem;
 }
 
 :root {
@@ -917,4 +937,3 @@ img {
     height: 300px;
   }
 }
-
