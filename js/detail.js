@@ -108,11 +108,11 @@ const PACKAGES = {
       ["cup-soda", "Air Mineral & Camilan"]
     ],
     images: [
-      "wakatobi1.jpg",
-      "wakatobi2.jpg",
-      "wakatobi3.jpg",
-      "wakatobi4.jpg",
-      "wakatobi5.jpg"
+      "img/wakatobi1.jpg",
+      "img/wakatobi2.jpg",
+      "img/wakatobi3.jpg",
+      "img/wakatobi4.jpg",
+      "img/wakatobi5.jpg"
     ]
   },
   karimunjawa: {
@@ -137,11 +137,11 @@ const PACKAGES = {
       ["cup-soda", "Air Mineral & Camilan"]
     ],
     images: [
-      "karimunjawa1.jpg",
-      "karimunjawa2.jpg",
-      "karimunjawa3.jpg",
-      "karimunjawa4.jpg",
-      "karimunjawa5.jpg"
+      "img/karimunjawa1.jpg",
+      "img/karimunjawa2.jpg",
+      "img/karimunjawa3.jpg",
+      "img/karimunjawa4.jpg",
+      "img/karimunjawa5.jpg"
     ]
   },
   nusapenida: {
@@ -170,7 +170,7 @@ const PACKAGES = {
       "img/penida2.jpg",
       "img/penida3.jpg",
       "img/penida4.jpg",
-      "img/penida5.jpg"
+      "img/penida5.png"
     ]
   },
   rinjani: {
@@ -282,11 +282,11 @@ const PACKAGES = {
       ["cup-soda", "Air Mineral & Camilan"]
     ],
     images: [
-      "769625905-50e93615e769?w=900&h=700&f",
-      "",
-      "",
-      "",
-      "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&h=400&fit=crop"
+      "img/maimun1.jpg",
+      "img/maimun2.jpg",
+      "img/maimun3.jpg",
+      "img/maimun4.jpg",
+      "img/maimun5.jpg"
     ]
   },
   aceh: {
@@ -311,11 +311,11 @@ const PACKAGES = {
       ["cup-soda", "Air Mineral & Camilan"]
     ],
     images: [
-      "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=900&h=700&fit=crop",
-      "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1596402184320-417e7178b2cd?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1441974231531-c6227db89f7b?w=600&h=400&fit=crop"
+      "img/masjid1.webp",
+      "img/masjid2.jpeg",
+      "img/masjid3.jpeg",
+      "img/masjid4.jpg",
+      "img/masjid5.jpg"
     ]
   },
   ubud: {
@@ -340,11 +340,11 @@ const PACKAGES = {
       ["cup-soda", "Air Mineral & Camilan"]
     ],
     images: [
-      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=900&h=700&fit=crop",
-      "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&h=400&fit=crop"
+      "ubud1.jpg",
+      "ubud2.jpg",
+      "ubud3.avif",
+      "ubud4.jpg",
+      "ubud5.jpg"
     ]
   },
   bandung: {
