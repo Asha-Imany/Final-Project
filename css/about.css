@@ -155,15 +155,14 @@ body {
 .footer {
   background: #0A2677;
   color: #fff;
-  padding: 20px 5vw 0;
+  padding: 15px 5vw 0;
 }
 
 .footer-top {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
-  gap: 40px;
-  padding-bottom: 50px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  grid-template-columns: 1fr auto auto auto; 
+  column-gap: 200px;
+  align-items: start;
 }
 
 .footer-logo img {
@@ -210,20 +209,6 @@ body {
   font-family: "Poppins", system-ui, sans-serif;
 }
 
-.footer- {
-  display: grid;
-  grid-template-columns: 1fr auto auto auto;  /* brand | jelajahi | informasi | layanan */
-  column-gap: 80px;                           /* jarak antar kolom link */
-  align-items: start;
-}
-
-/* biar teks link tidak menjorok (bawaan padding <ul>) */
-.footer-links ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
 .footer-links {
   list-style: none;
   font-family: "Poppins", system-ui, sans-serif;
@@ -259,14 +244,6 @@ body {
   transition: background 0.2s, color 0.2s, transform 0.2s;
 }
 
-.footer-social a:hover,
-.footer-social a:focus-visible,
-.footer-social a:active {
-  background: #fff;
-  color: #eaedf5;   /* ganti dengan biru dongker footer kamu */
-  transform: scale(1.08);
-}
-
 .footer-bottom {
   display: flex;
   align-items: center;
@@ -289,3 +266,87 @@ body {
   opacity: 0.7;
 }
 
+/* Laptop: ≤ 1200px */
+@media (max-width: 1200px) {
+  .footer-top {
+    column-gap: 56px;
+  }
+}
+
+/* Tablet landscape: ≤ 993px */
+@media (max-width: 993px) {
+  .footer-top {
+    column-gap: 40px;
+  }
+
+  .footer-logo img {
+    width: 140px;
+  }
+
+  .footer-desc {
+    max-width: 280px;
+  }
+}
+
+/* Tablet portrait: ≤ 768px */
+@media (max-width: 768px) {
+  .footer-top {
+    grid-template-columns: repeat(3, 1fr);  /* 3 kolom link rata */
+    row-gap: 40px;
+    column-gap: 24px;
+  }
+
+  /* logo + deskripsi pindah ke baris sendiri di atas */
+  .footer-logo {
+    grid-column: 1 / -1;
+  }
+
+  .footer-desc {
+    max-width: 420px;
+  }
+}
+
+/* HP besar: ≤ 617px */
+@media (max-width: 617px) {
+  .footer-top {
+    grid-template-columns: 1fr 1fr;  /* 2 kolom */
+    row-gap: 32px;
+  }
+
+  .footer-social a {
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+  }
+}
+
+/* HP standar: ≤ 450px */
+@media (max-width: 450px) {
+  .footer-top {
+    grid-template-columns: 1fr;      /* 1 kolom, ditumpuk */
+    row-gap: 28px;
+  }
+
+  .footer-logo img {
+    width: 120px;
+  }
+
+  .footer-desc {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .footer-heading {
+    margin-bottom: 8px;
+  }
+
+  .footer-social {
+    gap: 12px;
+  }
+
+  .footer-social a {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
