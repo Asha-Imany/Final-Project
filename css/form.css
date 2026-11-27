@@ -1,4 +1,25 @@
-//review
+:root {
+  --bg: #0a1226;
+  --panel: #121d38;
+  --teks: #eef2fb;
+  --redup: #a3b0cc;
+  --biru: #2c52a0;
+  --terang: #9db8ff;
+  --garis: #22305a;
+  --putih: #fff;
+  --putih-redup: rgba(255, 255, 255, 0.85);
+  --latar-halaman: #f3f7ff;
+  --bg-section: #e8f0f7;
+  --deskripsi: #3d4f6b;
+  --navy: #12256e;
+  
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif
+}
 .rating-section {
   max-width: 70rem;
   margin: 0 auto;
