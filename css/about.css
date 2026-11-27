@@ -74,7 +74,7 @@ body {
 /* 993px */
 @media (max-width: 993px) {
   .video-card {
-    flex: 0 0 380px;
+    flex: 0 0 360px;
     height: 300px;
   }
 
@@ -266,14 +266,14 @@ body {
   opacity: 0.7;
 }
 
-/* Laptop: ≤ 1200px */
+/* 1200px */
 @media (max-width: 1200px) {
   .footer-top {
     column-gap: 56px;
   }
 }
 
-/* Tablet landscape: ≤ 993px */
+/* 993px */
 @media (max-width: 993px) {
   .footer-top {
     column-gap: 40px;
@@ -288,15 +288,14 @@ body {
   }
 }
 
-/* Tablet portrait: ≤ 768px */
+/* 768px */
 @media (max-width: 768px) {
   .footer-top {
-    grid-template-columns: repeat(3, 1fr);  /* 3 kolom link rata */
+    grid-template-columns: repeat(3, 1fr); 
     row-gap: 40px;
     column-gap: 24px;
   }
 
-  /* logo + deskripsi pindah ke baris sendiri di atas */
   .footer-logo {
     grid-column: 1 / -1;
   }
@@ -306,10 +305,10 @@ body {
   }
 }
 
-/* HP besar: ≤ 617px */
+/* 617px */
 @media (max-width: 617px) {
   .footer-top {
-    grid-template-columns: 1fr 1fr;  /* 2 kolom */
+    grid-template-columns: 1fr 1fr; 
     row-gap: 32px;
   }
 
@@ -320,13 +319,23 @@ body {
   }
 }
 
-/* HP standar: ≤ 450px */
+/* 450px */
 @media (max-width: 450px) {
   .footer-top {
-    grid-template-columns: 1fr;      /* 1 kolom, ditumpuk */
-    row-gap: 28px;
+    grid-template-columns: repeat(2, auto);
+    justify-content: end;       
+    column-gap: 48px;
+    row-gap: 32px;
   }
 
+  .footer-logo {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+
+  .footer-top > div:last-child {
+    grid-column: 2;
+  }
   .footer-logo img {
     width: 120px;
   }
