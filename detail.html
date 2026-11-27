@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detail Paket - Jelajah Nusantara</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="detail-container">
+
+  <a href="jelajah.html" class="back-btn">
+    <i data-lucide="arrow-left"></i>
+    <span>Jelajah Nusantara</span>
+  </a>
+
+  <header class="detail-header">
+    <div class="header-image">
+      <img id="headerImg" src="" alt="">
+    </div>
+    <div class="header-info">
+      <h1 id="dTitle">Ekspedisi Gugusan Pulau Wayag</h1>
+      <div class="d-rating">
+        <i data-lucide="star" class="star-icon"></i>
+        <strong id="dRatingNum">4.7</strong>
+        <span id="dReviews">(234 Reviews)</span>
+      </div>
+      <div class="d-loc">
+        <i data-lucide="map-pin"></i>
+        <span id="dLocation">Kabupaten Raja Ampat, Papua Barat Daya</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="thumbnail-row">
+    <img class="thumb" id="g1" src="" alt="">
+    <img class="thumb" id="g2" src="" alt="">
+    <img class="thumb" id="g3" src="" alt="">
+    <img class="thumb" id="g4" src="" alt="">
+  </section>
+
+  <section class="content-card">
+    <h2>Tentang Destinasi</h2>
+    <p id="dDesc1"></p>
+    <p id="dDesc2" class="desc-hidden"></p>
+    <a href="#" id="readMore" class="read-more">Baca selengkapnya.</a>
+
+    <div class="divider"></div>
+
+    <h2>Fasilitas Terbaik</h2>
+    <div class="facilities" id="facilities"></div>
+  </section>
+
+  <section class="map-section">
+    <div id="map"></div>
+  </section>
+
+</div>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/detail.js"></script>
+</body>
+</html>
